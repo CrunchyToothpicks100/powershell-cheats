@@ -1,17 +1,43 @@
 # Powershell 7+
 winget install Microsoft.PowerShell
+choco install powershell-core
 
 # Notepad++
 winget install Notepad++.Notepad++
+choco install notepadplusplus
 
 # Git for Windows
 winget install --id Git.Git -e --source winget
+choco install git
 
 # Github CLI
 winget install --id GitHub.cli
+choco install gh
 
 # VSCode
 winget install -e --id Microsoft.VisualStudioCode
+choco install vscode
 
 # Python install manager
 winget install 9NQ7512CXL7T
+
+# Chocolatey
+winget install -e --id Chocolatey.Chocolatey
+
+# nodejs
+winget install -e --id OpenJS.NodeJS.LTS
+choco install nodejs
+
+# Claude
+winget install Anthropic.ClaudeCode
+choco install claude-code
+
+# Update PATH with:
+C:\Program Files\Notepad++
+%USERPROFILE%\AppData\Local\Python\bin
+%USERPROFILE%\.local\bin
+%USERPROFILE%\AppData\Roaming\npm
+C:\Program Files\nodejs\
+C:\Program Files\PowerShell\7\
+C:\ProgramData\chocolatey\bin
+C:\Program Files\Git\cmd
