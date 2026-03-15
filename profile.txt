@@ -1,0 +1,17 @@
+# Python venv
+Set-Alias -Name venvon -Value '.\venv\scripts\activate'
+Set-Alias -Name venvoff -Value 'deactivate'
+function venvmake { py -m venv venv }
+function venvdel { Remove-Item -Path venv -Recurse -Force }
+
+# Notepad and notepad++
+function note { notepad @args }
+function notepp { notepad++ @args }
+function npp { notepad++ @ args }
+
+# Run Git's version of bash, if installed
+function gitbash { start "C:\Program Files\Git\bin\bash.exe" }
+
+# Find path of application in PATH
+function where { where.exe @args }
+function which { where.exe @args }

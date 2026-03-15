@@ -1,0 +1,106 @@
+{
+    "emulator.emulatorPathWindows": "C:\\Users\\USER\\AppData\\Local\\Android\\Sdk\\emulator",
+    "emulator.emulatorPath": "C:\\Users\\USER\\AppData\\Local\\Android\\Sdk\\emulator",
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "git.openRepositoryInParentFolders": "never",
+    "editor.minimap.enabled": false,
+    "git.enableSmartCommit": true,
+    "python.createEnvironment.trigger": "off",
+    "security.workspace.trust.untrustedFiles": "open",
+    "terminal.integrated.stickyScroll.enabled": false,
+    "claudeCode.preferredLocation": "sidebar",
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "terminal.integrated.profiles.windows": {
+        "MSYS2 UCRT64": {
+            "path": "C:\\msys64\\ucrt64.exe",
+            "args": []
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "workbench.secondarySideBar.defaultVisibility": "visible",
+    "terminal.integrated.allowedLinkSchemes": [
+        "file",
+        "http",
+        "https",
+        "mailto",
+        "vscode",
+        "vscode-insiders",
+        "ms-settings"
+    ],
+    "vim.smartRelativeLine": true,
+    "editor.lineNumbers": "relative",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<leader>", "<S-j>"],
+            "commands": ["workbench.action.quickOpenTerm"]
+        }, 
+        {
+            "before": ["<leader>", "j"],
+            "after": ["5", "j"]
+        }, 
+        {
+            "before": ["<leader>", "k"],
+            "after": ["5", "k"]
+        }, 
+        {
+            "before": ["<leader>", "c"],
+            "commands": ["python.clearCacheAndReload"]
+        }, 
+        {
+            "before": ["<Leader>", "p"],
+            "commands": ["workbench.action.quickOpen", "editor.action.addSelectionToNextFindMatch"]
+        },
+        {
+            "before": ["<Leader>", "<S-p>"],
+            "commands": ["workbench.action.showCommands"]
+        }, 
+        {
+            "before": ["<leader>", "w"],
+            "commands": ["workbench.action.files.save"]
+        },
+        {
+            "before": ["<leader>", "q"],
+            "commands": ["workbench.action.closeActiveEditor"]
+        },
+        {
+            "before": ["<leader>", "w", "q"],
+            "commands": ["workbench.action.files.save", "workbench.action.closeActiveEditor"]
+        },
+        {
+            "before": ["<leader>", "n"],
+            "commands": ["workbench.action.nextEditor"]
+        },
+        {
+            "before": ["<leader>", ","],
+            "commands": ["workbench.action.openSettingsJson"]
+        },
+        {
+            "before": ["<leader>", "e"],
+            "commands": ["workbench.view.explorer"]
+        },
+        {
+            "before": ["<leader>", "y"],
+            "after": ["\"+"]
+        }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": [
+        {
+            "before": ["j", "k"],
+            "after": ["<Esc>"],
+            "commands": ["workbench.action.files.save"]
+        },
+        {
+            "before": ["J", "K"],
+            "after": ["<Esc>"],
+            "commands": ["workbench.action.files.save"]
+        }
+    ],
+    "vim.leader": "<Space>",
+    "claudeCode.selectedModel": "default",
+    "window.customMenuBarAltFocus": false,
+    "window.enableMenuBarMnemonics": false,
+    "workbench.activityBar.location": "top",
+    "workbench.colorTheme": "Abyss",
+    "python.terminal.activateEnvironment": false
+}

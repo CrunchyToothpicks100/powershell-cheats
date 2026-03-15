@@ -1,0 +1,8 @@
+# Install VSCode
+winget install -e --id Microsoft.VisualStudioCode
+
+# export extensions
+code --list-extensions > vscode-extensions.txt
+
+# import extensions
+cat vscode-extensions.txt | %{ code --install-extension $_ }

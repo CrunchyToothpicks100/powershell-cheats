@@ -1,0 +1,48 @@
+# Write stdout to file (overwrite)
+command > output.txt
+
+# Append stdout to file
+command >> output.txt
+
+# Write stderr (stream 2) to file
+command 2> errors.txt
+
+# Append stderr to file
+command 2>> errors.txt
+
+# Redirect stderr into stdout (merge both into one stream)
+command 2>&1
+
+# Write both stdout and stderr to file
+command *> all-output.txt
+
+# Append both stdout and stderr to file
+command *>> all-output.txt
+
+# Pipe stdout to another command
+command | Select-String "pattern"
+
+# Pipe and also save to file (tee)
+command | Tee-Object -FilePath output.txt
+
+# Pipe to tee and append
+command | Tee-Object -FilePath output.txt -Append
+
+# Pipe into a file directly
+command | Out-File output.txt
+
+# Pipe into file with append
+command | Out-File output.txt -Append
+
+# Pipe object to null (suppress output)
+command | Out-Null
+
+# Pipe to string (useful before file write)
+command | Out-String | Out-File output.txt
+
+# Redirect success output to null
+command > $null
+
+# Redirect all output to null
+command *>$null
+command | Out-Null

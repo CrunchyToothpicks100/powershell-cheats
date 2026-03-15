@@ -1,0 +1,40 @@
+# Install the Python Install Manager using winget
+winget install 9NQ7512CXL7T
+
+# List all installed Python runtimes
+py list
+
+# List available Python versions that can be installed online
+py list --online
+
+# Install latest stable python 3
+py install 3
+
+# Install a specific Python version
+py install 3.13
+py install 3.13t             # free-threaded build
+py install 3.13t-arm64       # free-threaded ARM64 build
+
+# Update all managed installs to the latest available
+py install --update
+py install --update 3.13     # update a specific version only
+
+# Force reinstall a version
+py install --force 3.13
+
+# Run a specific Python version
+py -V:3.13 script.py
+
+# Uninstall a specific version
+py uninstall 3.13
+py uninstall --yes 3.13      # skip confirmation prompt
+
+# Completely remove all managed Python runtimes
+py uninstall --purge
+
+# Show help for any command
+py help
+py help install
+
+# documentation
+https://docs.python.org/dev/using/windows.html

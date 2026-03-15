@@ -1,0 +1,32 @@
+# Top 10 Most Useful Set-ExecutionPolicy Commands
+# Run PowerShell as Administrator for most of these to take effect system-wide.
+
+# 1. Allow all signed and unsigned local scripts (most common dev setup)
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+# 2. Restrict all script execution (default / lockdown)
+Set-ExecutionPolicy Restricted -Scope LocalMachine
+
+# 3. Allow everything — useful for trusted dev machines (use with caution)
+Set-ExecutionPolicy Unrestricted -Scope CurrentUser
+
+# 4. Bypass for the current process only — no permanent change, great for CI/CD or one-off runs
+Set-ExecutionPolicy Bypass -Scope Process
+
+# 5. Require all scripts to be signed by a trusted publisher (most secure for production)
+Set-ExecutionPolicy AllSigned -Scope LocalMachine
+
+# 6. Apply RemoteSigned system-wide (all users on the machine)
+Set-ExecutionPolicy RemoteSigned -Scope LocalMachine
+
+# 7. Run a single script bypassing policy without changing the global setting
+PowerShell.exe -ExecutionPolicy Bypass -File "C:\path\to\script.ps1"
+
+# 8. Check the effective execution policy for every scope (diagnose policy conflicts)
+Get-ExecutionPolicy -List
+
+# 9. Reset policy to the Windows default (Restricted) for the current user
+Set-ExecutionPolicy Undefined -Scope CurrentUser
+
+# 10. Apply Bypass only for the current process via environment (useful in scripts/automation)
+$env:PSExecutionPolicyPreference = "Bypass"

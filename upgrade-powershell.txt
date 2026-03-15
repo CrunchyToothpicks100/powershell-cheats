@@ -1,0 +1,25 @@
+# Install Powershell 7+
+winget install Microsoft.PowerShell
+
+# List all PowerShell versions via winget
+winget list Microsoft.PowerShell
+
+# Launch PowerShell 7
+pwsh
+
+# Launch PowerShell 5.1
+powershell
+
+# Check current version
+echo $PSVersionTable.PSVersion
+
+# If $PROFILE does not exist, create new one
+if (!(Test-Path $PROFILE)) {
+    New-Item -Path $PROFILE -ItemType File -Force
+}
+
+# See path for $PROFILE
+echo $PROFILE
+
+# Go to $PROFILE's directory
+cd $PROFILE\..

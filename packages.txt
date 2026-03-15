@@ -1,0 +1,17 @@
+# Powershell 7+
+winget install Microsoft.PowerShell
+
+# Notepad++
+winget install Notepad++.Notepad++
+
+# Git for Windows
+winget install --id Git.Git -e --source winget
+
+# Github CLI
+winget install --id GitHub.cli
+
+# VSCode
+winget install -e --id Microsoft.VisualStudioCode
+
+# Python install manager
+winget install 9NQ7512CXL7T
